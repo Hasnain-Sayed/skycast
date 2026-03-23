@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App ☁</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <h1>Weather App🌎</h1>
+            <div><button onclick="github()"
+                    class="bg-blue-700 pr-2 flex rounded-full w-fit  justify-between items-center ring-1 ring-white"><img
+                        class="object-center invert rounded-full w-8 md:w-10"
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAABr0lEQVR4nO2Vu0oDQRSGPxVUFCwUJF4RL621F0RRsDOoqLWNhZdokdbKt1CJF7QSBEWCFoJPYGMVKy3shIgx3mKiEpiFZZiZnd0EscgPQ9jN+c+35zBnBkr6h2oHIsAFkADSYiXEuxWgrZjAFmATyAI/HisHHAEdhUIngRcLoLxSQDgodE1U4Bfqrn41SKW5AqBuuHXlrYr29gG9QMwDFBNxA1Lbm23AquRVUjeGgUagQvyOiPeOqiX/ts3IqHZvN/7UI/mzopNaRTQtHPQJHlLkWDYZzhWGY4LpVMoTNwXfKsD9AcFy1QlTcMpjY/lRreJQ0SqtANcRTA1SnldT8J0CPBEQPC3luTcFxxXgazGXflQD3Eh5zkyGqGacLm1PHzGvV4ocUZMpf59mNPA3YAeYBTolX/55DtgD3hXeDNDk9cUHLsM8cKL4gHHJMwp8GM7wfduLPykMj0A9cCgSPwHrGt+GBvpsU62jGde1uGDp6dJci1O2UEdLwDfwAIxZ7OxyBXSRgAqL9roTmuTEJINUKis/RlvAlwX4E9gFQhRRIXFtVmr+L/Mx6yXxZ/oFDl37po6ZopsAAAAASUVORK5CYII="
+                        alt="Github logo"><span class="md:text-md text-sm">GitHub</span></button></div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="hero">
+                <h2>Find Current Weather</h1>
+                    <p>Get accurate and up-to-date weather information for your location.</p>
+                    <div class="card">
+                        <div class="search-row">
+                            <input type="text" placeholder="Enter City Name" id="cityInput">
+                            <button type="submit" id="caller"><img src="images/utils/search.png" alt="Search"></button>
+                        </div>
+                        <div class="errBlock"> 
+                            <p id="errorMessage">Invalid city name. Please try again.</p>
+                        </div> 
+
+                        <div class="content">
+                            <img src="images/clear.png" id="weatherStatus" alt="clear weather">
+                            <h2 id="cityName">City Name</h2>
+                            <div class="temperature">
+                                <h3 id="temp">--°C</h3>
+                                <p id="description">--</p>
+                            </div>
+
+                            <div class="details">
+                                <div class="coordinates">
+                                    <img src="images/utils/lat.png" alt="">
+                                    <p id="latitude">Latitude: --</p>
+                                    <img src="images/utils/long.png" alt="">
+                                    <p id="longitude">Longitude: --</p>
+                                </div>
+
+                                <div class="weather-stats">
+                                    <div class="humidity">
+                                        <img src="images/utils/humidity.png" alt="">
+                                        <p id="humidity">Humidity: --</p>
+                                    </div>
+                                    <div class="wind">
+                                        <img src="images/utils/windy.png" alt="">
+                                        <p id="wind">Wind Speed: --</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <p>&copy; 2026 Weather App. All rights reserved By Blaze.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
