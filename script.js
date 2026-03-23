@@ -1,7 +1,5 @@
 
 const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=`;
-console.log("config loaded:", apiKey);
-
 let btn = document.getElementById('caller');
 
 let city = document.getElementById('cityInput');
