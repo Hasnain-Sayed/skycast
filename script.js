@@ -1,6 +1,6 @@
 
-const apiKey = "d2ec50b9d10d46371601658b5dd26bca";
 const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=`;
+console.log("config loaded:", apiKey);
 
 let btn = document.getElementById('caller');
 
